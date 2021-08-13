@@ -145,6 +145,17 @@ e.要使用 IDEA 从远程 GitHub 库引进一个项目，需要使用 VCS->Git-
 
 - `git stash pop`
 
+### 7、Git 常见错误
+
+#### 7.1、本地仓库的名称是 master,但是将 main 推送至远程的 main 库，两个仓库的命名不相同报错
+
+`error: src refspec xxx does not match any `  
+`error: failed to push some refs to`
+
+- 把本地的 `master` 仓库名称修改为远端的 `main`
+- `git branch -m oldBranchName newBranchName`
+- 然后`push`就行了
+
 # 命令行
 
 - 查看目录下的文件`dir`
